@@ -40,7 +40,6 @@ async function fetchApps(): Promise<App[]> {
       "https://itunes.apple.com/lookup?id=1495105773&entity=software&limit=200",
       {
         next: { revalidate: 3600 },
-        cache: 'no-store',
       }
     );
 
